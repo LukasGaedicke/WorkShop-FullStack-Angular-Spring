@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "f71fd97a-538b-47f6-b6a1-8d7a5d13eb38",
+		"name": "WorkShop AlgaWorks- FullStack Ang&Spring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listarTodos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/oportunidades",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"oportunidades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOnlyOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/oportunidades/3",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"oportunidades",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "criarOportunidade",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nomeProspecto\":\"Embarcadeiro\",\n\t\"descricao\":\"Teste\",\n\t\"valor\":\"12\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/oportunidades",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"oportunidades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarOportunidade",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nomeProspecto\":\"Embarcadeiro3\",\n\t\"descricao\":\"465\",\n\t\"valor\":\"1233\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/oportunidades/5",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"oportunidades",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteOportunidade",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/oportunidades/1",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"oportunidades",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
